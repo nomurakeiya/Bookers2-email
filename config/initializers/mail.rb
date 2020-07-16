@@ -10,7 +10,7 @@ if Rails.env.production?
       enable_starttls_auto: true
     }
   elsif Rails.env.development?
-    ActionMailer::Base.delivery_method = :letter_opener
+    ActionMailer::Base.delivery_method = :letter_opener_web
   else
     ActionMailer::Base.delivery_method = :test
   end
